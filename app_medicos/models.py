@@ -6,7 +6,7 @@ class Especialidade(models.Model):
     nome = models.CharField(max_length=50)
     descricao = models.TextField(max_length=300)
 
-class Medicos(models.Model):
+class Medico(models.Model):
     name = models.CharField(max_length=50)
     endereco = models.CharField(max_length=200)
     telefone = models.CharField(max_length=15, default='')  
