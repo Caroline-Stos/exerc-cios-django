@@ -3,11 +3,11 @@ from django.db import models
 #Caroline Santos
 
 class Especialidade(models.Model):
-    nome = models.CharField(max_length=50)
-    descricao = models.TextField(max_length=300)
+    nome = models.CharField(max_length=50, verbose_name='nome')
+    descricao = models.TextField(max_length=300, verbose_name='descricao')
 
 class Medico(models.Model):
-    name = models.CharField(max_length=50)
+    nome = models.CharField(max_length=50)
     endereco = models.CharField(max_length=200)
     telefone = models.CharField(max_length=15, default='')  
     email = models.EmailField(max_length=200)
